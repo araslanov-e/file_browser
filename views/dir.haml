@@ -1,0 +1,11 @@
+%ul
+  %li
+    %a{href: @back}
+      \..
+    - @directories.each do |path, dir|
+      %li
+        %a{href: path} 
+          = dir
+    - @files.each do |file|
+      %li 
+        = file
